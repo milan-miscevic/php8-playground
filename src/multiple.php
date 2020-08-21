@@ -1,5 +1,9 @@
 <?php
 
+// constructor-promotion
+// named-params
+// stringable
+
 class User
 {
     public function __construct(
@@ -15,8 +19,12 @@ class User
     }
 }
 
-echo new User(
+$user = new User(
     'John',
     'Doe',
     location: 'New York',
 );
+
+echo $user;
+echo '<br>';
+echo 'Stringable: ' . (($user instanceof Stringable) ? '' : 'not') . 'implemented';
