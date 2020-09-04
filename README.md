@@ -1,3 +1,3 @@
 # php8-playground
 
-Playground for the features in the upcoming PHP 8.
+A playground for the features in the upcoming PHP 8.

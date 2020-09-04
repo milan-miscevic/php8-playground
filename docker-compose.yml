@@ -3,12 +3,12 @@ services:
   php:
     image: devilbox/php-fpm-8.0:latest
     volumes:
-      - ./src:/src
-  web:
+      - ./src:/var/www/html
+  nginx:
     image: nginx
     ports:
       - 80:80
     volumes:
-      - ./src:/src
-      - ./php8-playground.mmm.conf:/etc/nginx/conf.d/php8-playground.mmm.conf
       - ./logs:/var/log/nginx
+      - ./php8-playground.mmm.conf:/etc/nginx/conf.d/php8-playground.mmm.conf
+      - ./src:/var/www/html
