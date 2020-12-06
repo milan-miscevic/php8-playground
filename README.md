@@ -1,3 +1,5 @@
 # php8-playground
 
-A playground for the features in the upcoming PHP 8.
+*Note: Archived after the release of PHP 8.*
+
+This repository provides a playground for the features in the upcoming PHP 8.
